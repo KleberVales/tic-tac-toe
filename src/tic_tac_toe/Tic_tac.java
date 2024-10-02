@@ -15,8 +15,15 @@ public class Tic_tac {
 			victory=checkVitory(old);
 			if(!victory.equals("")) {
 				System.out.printf("player %s win%n", victory);
+				break;
+			}
+			try {
+			
+			}catch(Exception e) {
+				System.out.printf("Erro");
 			}
 		}
+		System.out.printf("Fim do jogo");
 	}
 	
 	public static void drawGame(Field[][] old) {
@@ -31,6 +38,14 @@ public class Tic_tac {
 		
 		
 	}
+	
+	public static void clearScreem() {
+		for(int cont=0; cont < 200; cont++) {
+			System.out.println("");
+		}
+	}
+	
+	
 	public static String checkVitory(Field[][] old) {
 		return "";
 	}
