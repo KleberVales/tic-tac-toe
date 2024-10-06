@@ -18,6 +18,9 @@ public class Tic_tac {
 				break;
 			}
 			try {
+				if(checkGame(old, play(scan, currentSymbol), currentSymbol )) {
+					
+				}
 			
 			}catch(Exception e) {
 				System.out.printf("Erro");
