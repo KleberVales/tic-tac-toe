@@ -19,7 +19,11 @@ public class Tic_tac {
 			}
 			try {
 				if(checkGame(old, play(scan, currentSymbol), currentSymbol )) {
-					
+					if(currentSymbol=='x') {
+						currentSymbol='o';
+					}else {
+						currentSymbol='x';
+					}
 				}
 			
 			}catch(Exception e) {
