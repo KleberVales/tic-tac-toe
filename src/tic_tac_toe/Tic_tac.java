@@ -45,6 +45,26 @@ public class Tic_tac {
 		}
 	}
 	
+	public static int[] play(Scanner scan, char sa) {
+		int p[] = new int[2];
+		System.out.printf("%s %c%n", "Who play: ", sa);
+		System.out.print("Show the line: ");
+		p[0]=scan.nextInt();
+		System.out.print("Show the column: ");
+		p[1]=scan.nextInt();
+		return p;
+	}
+	
+	public void boolean checkGame(Field[][] old, int p[], char currentSymbol) {
+		if(old[p[0]][p[1]].getSymbol()==' ') {
+			old[p[0]][p[1]].setSymbol(currentSymbol);
+			return true;
+		}else {
+			return false;
+		}
+		
+	}
+	
 	
 	public static String checkVitory(Field[][] old) {
 		return "";
